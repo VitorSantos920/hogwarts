@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #1f1d1d;
     color: #fff;
@@ -16,4 +20,9 @@ h3,
 h4,
 h5 {
     font-family: "Almendra SC", serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
