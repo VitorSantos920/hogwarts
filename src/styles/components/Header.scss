@@ -2,61 +2,84 @@
     justify-content: center;
     position: fixed;
     width: 100vw;
+    z-index: 1;
 }
 
-.container {
-    font-family: "Almendra SC", serif;
-
-    max-width: 1266px;
-
-    justify-content: space-between;
+.header__container {
     align-items: center;
+    color: #fff;
     flex-wrap: wrap;
+    font-family: "Almendra SC", serif;
+    justify-content: space-between;
+    max-width: 1266px;
+    padding-top: 1.3rem;
+    transition: 0.3s ease-in-out;
     width: 80%;
 
-    color: #fff;
+    .header__logo { font-size: 4rem; }
 
-    padding-top: 1.3rem;
-
-    .logo {
-        font-size: 4rem;
-    }
-
-    .menu-itens {
-        list-style: none;
-        gap: 2.2rem;
-        font-size: 1.8rem;
+    .header__menu-itens {
         flex-wrap: wrap;
+        font-size: 1.8rem;
+        gap: 2.2rem;
+        list-style: none;
 
-        .item {
+        .header__item {
             padding: 12px;
+            position: relative;
             transition: 1s;
 
-            &:hover {
-                text-decoration: underline;
+            &::before {
+                background-color: #fff;
+                top: 0;
+                content: "";
+                height: 2px;
+                left: 0;
+                position: absolute;
+                transition: 1s;
+                width: 0;
+                height: 100%;
+                z-index: -1;
             }
+
+            &:hover::before { width: 100%; }
+
+            & a { transition: 1s; }
+
+            &:hover a { color: #000; }
         }
     }
 
-    .hidden-menu {
-        display: none;
-    }
+    .header__menu--toggle { display: none; }
 }
 
 @media screen and (max-width: 950px) {
-    .container {
-        width: 95%;
-    }
+    .header__container { width: 95%; }
 }
 
 @media screen and (max-width: 790px) {
-    .container {
-        .menu-itens {
-            display: none;
+    .header__container {
+        .header__menu .header__menu-itens {
+            align-items: center;
+            background-color: #000;
+            flex-direction: column;
+            height: calc(100vh - 96.8px);
+            justify-content: center;
+            left: 0;
+            position: absolute;
+            text-align: center;
+            top: 96.8px;
+            transform: translateX(100%);
+            width: 100%;
         }
 
-        .hidden-menu {
-            display: block;
+        .header__menu .header__menu-itens.open {
+            transform: translateX(0);
+            transition: all 0.2s;
+
+            .header__item { width: 100%; }
         }
+
+        .header__menu--toggle { display: block; }
     }
 }
