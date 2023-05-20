@@ -1,0 +1,62 @@
+.header {
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+}
+
+.container {
+    font-family: "Almendra SC", serif;
+
+    max-width: 1266px;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+
+    color: #fff;
+
+    padding-top: 1.3rem;
+
+    .logo {
+        font-size: 4rem;
+    }
+
+    .menu-itens {
+        list-style: none;
+        gap: 2.2rem;
+        font-size: 1.8rem;
+        flex-wrap: wrap;
+
+        .item {
+            padding: 12px;
+            transition: 1s;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .hidden-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .container {
+        .menu-itens {
+            display: none;
+        }
+
+        .hidden-menu {
+            display: block;
+        }
+    }
+}
