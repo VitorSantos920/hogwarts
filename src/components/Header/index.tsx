@@ -1,19 +1,19 @@
-import '../../styles/components/Header.scss';
 import { FiMenu } from 'react-icons/fi';
 import { useState } from 'react';
-
+import './style';
+import { DivHeaderContainer, HeaderContainer, ListContainer } from './style';
 export function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="header flex">
-            <div className="header__container flex">
+        <HeaderContainer className="header flex">
+            <DivHeaderContainer className="header__container flex">
                 <a href="#" className="header__logo">
                     HW
                 </a>
 
                 <nav className="header__menu">
-                    <ul
+                    <ListContainer
                         className={`header__menu-itens flex ${
                             isOpen && 'open'
                         }`}
@@ -30,7 +30,7 @@ export function Header() {
                         <li className="header__item">
                             <a href="#">Dumbledore</a>
                         </li>
-                    </ul>
+                    </ListContainer>
                 </nav>
 
                 <nav
@@ -39,7 +39,7 @@ export function Header() {
                 >
                     <FiMenu className="hidden-menu" size={52} />
                 </nav>
-            </div>
-        </header>
+            </DivHeaderContainer>
+        </HeaderContainer>
     );
 }
