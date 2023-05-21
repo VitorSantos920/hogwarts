@@ -1,20 +1,22 @@
 import { Header } from './components/Header';
 import { FiChevronsDown } from 'react-icons/fi';
-import './styles/components/Home.scss';
+import { Home } from './styles/components/Home';
 
 function App() {
     return (
         <div className="App">
             <Header />
             <main className="main">
-                <section className="home flex">
-                    <h1 className="title">Hogwarts</h1>
-                    <h2>“Draco Dormiens Nunquam Titillandus.”</h2>
+                <Home className="home flex">
+                    <h1 className="home__title">Hogwarts</h1>
+                    <h2 className="home__subtitle">
+                        “Draco Dormiens Nunquam Titillandus.”
+                    </h2>
 
                     <a href="#">
-                        <FiChevronsDown className="arrow-down" size={72} />
+                        <FiChevronsDown className="home__arrowDown" size={72} />
                     </a>
-                </section>
+                </Home>
             </main>
         </div>
     );
