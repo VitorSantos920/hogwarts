@@ -24,6 +24,10 @@ export const stitches = createStitches({
             text: 'Aref Ruqaa, serif',
         },
     },
+    media: {
+        bp1: '(max-width: 950px)',
+        bp2: '(max-width: 790px)',
+    },
 });
 
 const injectGlobalStyles = stitches.globalCss({
