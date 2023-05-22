@@ -23,6 +23,15 @@ export const stitches = createStitches({
             title: 'Almendra SC, serif',
             text: 'Aref Ruqaa, serif',
         },
+        fontSizes: {
+            title: '5rem',
+        },
+        space: {
+            section: '174px',
+        },
+        lineHeights: {
+            1: 2.5,
+        },
     },
     media: {
         bp1: '(max-width: 950px)',
