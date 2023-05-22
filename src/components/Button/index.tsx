@@ -16,6 +16,8 @@ export const Button = styled('button', {
     position: 'relative',
     transition: '2.5s',
     width: '50%',
+    minWidth: 170,
+
     '&:hover::before': {
         width: '100%',
         zIndex: -1,
