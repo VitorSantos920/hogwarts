@@ -37,4 +37,35 @@ export const ContainerHistory = styled('div', {
             textAlign: 'justify',
         },
     },
+
+    '@bp1': {
+        '&': {
+            justifyContent: 'space-around',
+        },
+    },
+
+    '@bp2': {
+        '&': {
+            flexDirection: 'column',
+            gap: '0.5rem',
+
+            '.history__title': {
+                textAlign: 'center',
+
+                br: { display: 'none' },
+            },
+
+            '.history__about': {
+                width: '70%',
+
+                '.history__description': {
+                    marginBottom: 30,
+                },
+
+                button: {
+                    width: '100%',
+                },
+            },
+        },
+    },
 });
