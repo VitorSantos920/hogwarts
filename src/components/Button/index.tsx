@@ -12,10 +12,10 @@ export const Button = styled('button', {
     color: '#fff',
     cursor: 'pointer',
     overflow: 'hidden',
-    padding: '0.75rem 1.5rem',
+    padding: '0.5rem 1.5rem',
     position: 'relative',
     transition: '2.5s',
-
+    width: '50%',
     '&:hover::before': {
         width: '100%',
         zIndex: -1,
