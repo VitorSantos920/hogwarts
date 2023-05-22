@@ -22,11 +22,17 @@ export const Home = styled('section', {
     paddingTop: '100px',
     textAlign: 'center',
 
-    '.home__title': { fontSize: '7rem' },
+    '.home__title': { fontSize: '9rem' },
 
     '.home__subtitle': { fontSize: '3rem' },
 
     '.home__arrowDown': {
         animation: `${move} 1s ease-in-out infinite alternate`,
+        transition: 'all 1s',
+
+        '&:hover': {
+            boxShadow: '0 0 40px 4px #fff',
+            backgroundClip: 'border-box',
+        },
     },
 });
