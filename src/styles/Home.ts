@@ -1,5 +1,5 @@
 import { keyframes } from '@stitches/react';
-import { stitches } from '../../../stitches.config';
+import { stitches } from '../../stitches.config';
 
 import background from '../../img/bgHogwarts.jpeg';
 
