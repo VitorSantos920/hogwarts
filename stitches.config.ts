@@ -66,8 +66,20 @@ const injectGlobalStyles = stitches.globalCss({
         textDecoration: 'none',
     },
 
+    'section:not(nth-child(1))': {
+        margin: '$section 0',
+    },
+
     '.flex': {
         display: 'flex',
+    },
+
+    '.bold': {
+        fontWeight: 700,
+    },
+
+    '::-webkit-scrollbar': {
+        display: 'none',
     },
 });
 
