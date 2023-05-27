@@ -11,9 +11,8 @@ export const History = styled('section', {
 
 export const ContainerHistory = styled('div', {
     alignItems: 'center',
-    color: 'white',
     gap: 30,
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
     maxWidth: '1266px',
 
     '.history__title': {
