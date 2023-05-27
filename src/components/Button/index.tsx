@@ -9,7 +9,7 @@ export const Button = styled('button', {
     borderWidth: 1,
     fontFamily: '$text',
     fontSize: '1.5rem',
-    color: '#fff',
+    color: 'inherit',
     cursor: 'pointer',
     overflow: 'hidden',
     padding: '0.5rem 1.5rem',

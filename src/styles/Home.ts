@@ -20,6 +20,7 @@ export const Home = styled('section', {
     justifyContent: 'center',
     minHeight: '100vh',
     paddingTop: '100px',
+    textAlign: 'center',
 
     '.home__title': { fontSize: '9rem' },
 
