@@ -1,7 +1,7 @@
 import { keyframes } from '@stitches/react';
 import { stitches } from '../../stitches.config';
 
-import background from '../../img/bgHogwarts.jpeg';
+import background from '../img/bgHogwarts.jpeg';
 
 const { styled } = stitches;
 
@@ -20,7 +20,6 @@ export const Home = styled('section', {
     justifyContent: 'center',
     minHeight: '100vh',
     paddingTop: '100px',
-    textAlign: 'center',
 
     '.home__title': { fontSize: '9rem' },
 

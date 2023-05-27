@@ -11,9 +11,8 @@ export const HeaderContainer = styled('header', {
 
 export const DivHeaderContainer = styled('div', {
     alignItems: 'center',
-    color: 'white',
     flexWrap: 'wrap',
-    fontFamily: 'Almendra SC, serif',
+    fontFamily: '$title',
     justifyContent: 'space-between',
     maxWidth: '1266px',
     paddingTop: '1.3rem',
@@ -24,9 +23,7 @@ export const DivHeaderContainer = styled('div', {
 
     '.header__menu--toggle': { display: 'none' },
 
-    '@bp1': {
-        width: '95%',
-    },
+    '@bp1': { width: '95%' },
 
     '@bp2': {
         ul: {
@@ -47,14 +44,10 @@ export const DivHeaderContainer = styled('div', {
             transform: 'translateX(0)',
             transition: 'all 0.2s',
 
-            li: {
-                width: '100%',
-            },
+            li: { width: '100%' },
         },
 
-        '.header__menu--toggle': {
-            display: 'block',
-        },
+        '.header__menu--toggle': { display: 'block' },
     },
 });
 
@@ -81,9 +74,7 @@ export const ListContainer = styled('ul', {
             zIndex: -1,
         },
 
-        '&:hover::before': {
-            width: '100%',
-        },
+        '&:hover::before': { width: '100%' },
 
         '& a': { transition: '1s' },
 
