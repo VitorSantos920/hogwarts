@@ -72,8 +72,9 @@ const injectGlobalStyles = stitches.globalCss({
         textDecoration: 'none',
     },
 
-    'section:not(nth-child(1))': {
+    'section:not(:first-child)': {
         margin: '$section 0',
+        justifyContent: 'center',
     },
 
     '.flex': {
