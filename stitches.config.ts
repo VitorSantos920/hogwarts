@@ -61,6 +61,12 @@ const injectGlobalStyles = stitches.globalCss({
         fontWeight: 400,
     },
 
+    p: {
+        lineHeight: '$1',
+        fontSize: '1.225rem',
+        textAlign: 'justify',
+    },
+
     a: {
         color: '#fff',
         textDecoration: 'none',
