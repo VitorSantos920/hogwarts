@@ -36,11 +36,11 @@ export const Button = styled('button', {
     variants: {
         house: {
             gryffindor: {
-                borderColor: '$house__gryffHighlightColor',
+                borderColor: '$house__gryffColor',
 
                 '&:hover': {
                     boxShadow: '0 0 10px 5px #ff004c',
-
+                    borderColor: '$house__gryffHighlightColor',
                     '&::before': {
                         backgroundColor: '$house__gryffHighlightColor',
                     },
@@ -48,10 +48,11 @@ export const Button = styled('button', {
             },
 
             slytherin: {
-                borderColor: '$house__slythHighlightColor',
+                borderColor: '$house__slythColor',
 
                 '&:hover': {
                     boxShadow: '0 0 10px 5px #00ffae',
+                    borderColor: '$house__slythHighlightColor',
 
                     '&::before': {
                         backgroundColor: '$house__slythHighlightColor',
@@ -72,10 +73,11 @@ export const Button = styled('button', {
             },
 
             hufflepuff: {
-                borderColor: '$house__huffleHighlightColor',
+                borderColor: '$house__huffleColor',
 
                 '&:hover': {
                     boxShadow: '0 0 10px 5px #ffbb00',
+                    borderColor: '$house__huffleHighlightColor',
 
                     '&::before': {
                         backgroundColor: '$house__huffleHighlightColor',
