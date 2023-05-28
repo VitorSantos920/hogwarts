@@ -99,4 +99,8 @@ export const Button = styled('button', {
             },
         },
     },
+
+    defaultVariants: {
+        house: 'default',
+    },
 });
