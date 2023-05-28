@@ -44,7 +44,40 @@ export const HouseContainer = styled('section', {
     },
 
     '.house__img': {
-        height: '600px',
+        width: '35%',
+
+        img: {
+            width: '100%',
+        },
+    },
+
+    '@bp2': {
+        flexWrap: 'wrap-reverse',
+
+        '.house__content': {
+            width: '70%',
+            textAlign: 'center !important',
+
+            p: {
+                textAlign: 'justify !important',
+            },
+
+            '&::before': {
+                display: 'none',
+            },
+
+            '.house__characteristics': {
+                justifyContent: 'space-around',
+            },
+
+            '.house__btn': {
+                width: '100%',
+            },
+        },
+
+        '.house__img': {
+            width: '70%',
+        },
     },
 
     variants: {
@@ -60,6 +93,12 @@ export const HouseContainer = styled('section', {
                     },
                     '.house__title, figcaption': {
                         color: '$house__gryffColor',
+                    },
+
+                    '@bp3': {
+                        figcaption: {
+                            fontSize: '2rem !important',
+                        },
                     },
                 },
             },
@@ -99,9 +138,14 @@ export const HouseContainer = styled('section', {
                     '.house__title, figcaption': {
                         color: '$house__ravenColor',
                     },
+
+                    '@bp3': {
+                        figcaption: {
+                            fontSize: '2rem !important',
+                        },
+                    },
                 },
             },
-
             hufflepuff: {
                 '.house__content': {
                     order: 1,

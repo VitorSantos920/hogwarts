@@ -54,7 +54,9 @@ export function House({
                     </figure>
                 </div>
 
-                <Button house={`${imgHouse[0]}`}>Leia Mais</Button>
+                <Button className="house__btn" house={`${imgHouse[0]}`}>
+                    Leia Mais
+                </Button>
             </div>
             <figure className="house__img">
                 <img
