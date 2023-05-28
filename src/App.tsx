@@ -5,6 +5,7 @@ import { Home } from './styles/Home';
 import { History } from './styles/History';
 import { Houses } from './styles/Houses';
 import { Container } from './styles/Container';
+import { House } from './components/House';
 
 function App() {
     return (
@@ -48,7 +49,7 @@ function App() {
                                 </span>
                                 .
                             </p>
-                            <Button house={'default'}>Leia Mais</Button>
+                            <Button>Leia Mais</Button>
                         </div>
                     </Container>
                 </History>
@@ -71,6 +72,101 @@ function App() {
                             mais pontos ganha a
                             <span className="bold"> Taça das Casas</span>.
                         </p>
+                        <House
+                            houseTitle="Grifinória"
+                            housePhrase='"Enquanto os mais corajosos e ousados foram para o destemido Grifinória."'
+                            houseAbout="Sendo uma das quatro casas da Escola de Magia e Bruxaria de Hogwarts, a Grifinória foi fundada por Godrico Gryffindor. Suas cores são o Escarlarte e o Ouro, possui como animal emblemático o Leão e corresponde ao elemento Fogo.
+                            O Fantasma Patrono da Grifinória é Sir Nicholas de Mimsy-Porpington, mais conhecido como “Nick Quase-Sem-Cabeça."
+                            baseURLPath="./src/img/gryffindor"
+                            imgCharacteristics={[
+                                {
+                                    name: 'courage',
+                                    alt: 'Símbolo de coragem representado por um punho.',
+                                    figcaption: 'Coragem',
+                                },
+                                {
+                                    name: 'determination',
+                                    alt: 'Símbolo de determinação representado por uma fênix.',
+                                    figcaption: 'Determinação',
+                                },
+                            ]}
+                            imgHouse={[
+                                'gryffindor',
+                                'Brasão da Grifinória e o personagem Harry Potter acima dele.',
+                            ]}
+                        />
+                        <House
+                            houseTitle="Sonserina"
+                            housePhrase='"Sonserina, aceitou apenas os bruxos de sangue puro e grande astúcia, que a ele pudessem vir a igualar."'
+                            houseAbout="A Sonserina possui como fundador o Salazar Slytherin.
+                            Os membros desta casa possuem a característica em comum de formar grupos, e em muitos deles, originam-se líderes, exemplificando as qualidades do fundador.
+                            Apesar de qualquer status sanguíneo ser aceito em Sonserina, seu fundador prezava e valorizava os estudantes de Sangue Puro.
+                            O animal emblemático desta casa é uma Serpente e suas cores são Verde e Prata e corresponde ao elemento Água.
+                            O Fantasma Patrono da Sonserina é o Barão Sangrento."
+                            baseURLPath="./src/img/slytherin"
+                            imgCharacteristics={[
+                                {
+                                    name: 'leadership',
+                                    alt: 'Símbolo de liderança representado por uma coroa.',
+                                    figcaption: 'Coragem',
+                                },
+                                {
+                                    name: 'ambition',
+                                    alt: 'Símbolo de ambição representado por um alvo.',
+                                    figcaption: 'Ambição',
+                                },
+                            ]}
+                            imgHouse={[
+                                'slytherin',
+                                'Brasão da Sonserina e o personagem Draco Malfoy acima dele.',
+                            ]}
+                        />
+                        <House
+                            houseTitle="Corvinal"
+                            housePhrase='"O espírito sem limites é o maior tesouro do homem."'
+                            houseAbout="Fundada por Rowena Ravenclaw, a Corvinal é uma das quatro casas de Hogwarts.
+                            Suas cores representativas são o Azul e o Bronze e seu animal emblemático é uma Águia.
+                            O Fantasma Patrono da Corvinal é a Dama Cinzenta e corresponde ao elemento Ar, com o azul representando o céu e o bronze as penas de uma águia, possuindo relação direta com o elemento."
+                            baseURLPath="./src/img/ravenclaw"
+                            imgCharacteristics={[
+                                {
+                                    name: 'intelligence',
+                                    alt: 'Símbolo de inteligência representado por um cérebro.',
+                                    figcaption: 'Inteligência',
+                                },
+                                {
+                                    name: 'knowledge',
+                                    alt: 'Símbolo de conhecimento representado por um livro aberto.',
+                                    figcaption: 'Conhecimento',
+                                },
+                            ]}
+                            imgHouse={[
+                                'ravenclaw',
+                                'Brasão da Corvinal e a personagem Luna Lovegood acima dele.',
+                            ]}
+                        />
+                        <House
+                            houseTitle="Lufa-Lufa"
+                            housePhrase='"A boa Lufa-Lufa recebeu os restantes e lhes ensinou tudo que conhecia."'
+                            houseAbout="A Lufa-Lufa foi fundada por Helga Hufflepuff e faz parte do grupo de 4 casas de Hogwarts, sendo conhecida por ser a mais inclusiva de todas. Seu animal emblemático é um texugo e suas cores são o Amarelo, que representa o trigo, e o Preto, que simboliza o solo. Por isso, a Lufa-Lufa corresponde ao elemento Terra. Os alunos desta casa possuem excelentes habilidades com a matéria de Herbologia, graças a esta correspondência. Seu Fantasma Patrono é o Frei Gorducho."
+                            baseURLPath="./src/img/hufflepuff"
+                            imgCharacteristics={[
+                                {
+                                    name: 'dedication',
+                                    alt: 'Símbolo de dedicação representado por um punho saindo do solo.',
+                                    figcaption: 'Dedicação',
+                                },
+                                {
+                                    name: 'loyalty',
+                                    alt: 'Símbolo de lealdade representado por um aperto de mão.',
+                                    figcaption: 'Lealdade',
+                                },
+                            ]}
+                            imgHouse={[
+                                'hufflepuff',
+                                'Brasão da Lufa-Lufa e o personagem Cedrico Diggory acima dele.',
+                            ]}
+                        />
                     </Container>
                 </Houses>
             </main>
