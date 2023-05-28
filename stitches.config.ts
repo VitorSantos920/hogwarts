@@ -25,9 +25,11 @@ export const stitches = createStitches({
         },
         fontSizes: {
             title: '5rem',
+            figcaption: '2.5rem',
         },
         space: {
             section: '174px',
+            phrase: '30px',
         },
         lineHeights: {
             1: 2.5,
@@ -59,6 +61,7 @@ const injectGlobalStyles = stitches.globalCss({
     'h1, h2, h3, h4, h5': {
         fontFamily: '$title',
         fontWeight: 400,
+        fontSize: '$title',
     },
 
     p: {
