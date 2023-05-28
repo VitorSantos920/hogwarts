@@ -50,12 +50,17 @@ export const HouseContainer = styled('section', {
     variants: {
         house: {
             gryffindor: {
-                '.house__title, figcaption': {
-                    color: '$house__gryffColor',
-                },
+                '.house__content': {
+                    '& ::selection:not(img)': {
+                        backgroundColor: '$house__gryffColor',
+                    },
 
-                '.house__content::before': {
-                    backgroundColor: '$house__gryffColor',
+                    '&::before': {
+                        backgroundColor: '$house__gryffColor',
+                    },
+                    '.house__title, figcaption': {
+                        color: '$house__gryffColor',
+                    },
                 },
             },
 
@@ -64,12 +69,16 @@ export const HouseContainer = styled('section', {
                     order: 1,
                     textAlign: 'right',
 
-                    '.house__phrase': {
-                        textAlign: 'right',
+                    '& ::selection:not(img)': {
+                        backgroundColor: '$house__slythColor',
                     },
 
                     '&::before': {
                         backgroundColor: '$house__slythColor',
+                    },
+
+                    '.house__phrase': {
+                        textAlign: 'right',
                     },
 
                     '.house__title, figcaption': {
@@ -79,12 +88,17 @@ export const HouseContainer = styled('section', {
             },
 
             ravenclaw: {
-                '.house__title, figcaption': {
-                    color: '$house__ravenColor',
-                },
+                '.house__content': {
+                    '&::before': {
+                        backgroundColor: '$house__ravenColor',
+                    },
 
-                '.house__content::before': {
-                    backgroundColor: '$house__ravenColor',
+                    '& ::selection:not(img)': {
+                        backgroundColor: '$house__ravenColor',
+                    },
+                    '.house__title, figcaption': {
+                        color: '$house__ravenColor',
+                    },
                 },
             },
 
@@ -95,6 +109,10 @@ export const HouseContainer = styled('section', {
 
                     '&::before': {
                         backgroundColor: '$house__huffleBeforeColor',
+                    },
+
+                    '& ::selection:not(img)': {
+                        backgroundColor: '$house__huffleColor',
                     },
 
                     '.house__phrase': {

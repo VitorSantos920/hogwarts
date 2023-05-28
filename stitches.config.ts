@@ -80,6 +80,11 @@ const injectGlobalStyles = stitches.globalCss({
         justifyContent: 'center',
     },
 
+    'section ::selection:not(img)': {
+        background: '#000',
+        color: '#fff',
+    },
+
     '.flex': {
         display: 'flex',
     },
