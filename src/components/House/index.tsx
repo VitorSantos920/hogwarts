@@ -12,7 +12,7 @@ interface HouseProps {
         { name: string; alt: string; figcaption: string }
     ];
 
-    imgHouse: [name: string, alt: string];
+    imgHouse: { name: string; alt: string };
 }
 
 export function House({
@@ -26,7 +26,7 @@ export function House({
     imgHouse,
 }: HouseProps) {
     return (
-        <HouseContainer className="house flex" house={`${imgHouse[0]}`}>
+        <HouseContainer className="house flex" house={`${imgHouse.name}`}>
             <div className="house__content">
                 <h3 className="house__title">{houseTitle}</h3>
                 <p className="house__phrase">{housePhrase}</p>
@@ -54,14 +54,14 @@ export function House({
                     </figure>
                 </div>
 
-                <Button className="house__btn" house={`${imgHouse[0]}`}>
+                <Button className="house__btn" house={`${imgHouse.name}`}>
                     Leia Mais
                 </Button>
             </div>
             <figure className="house__img">
                 <img
-                    src={`${baseURLPath}/${imgHouse[0]}.png`}
-                    alt={imgHouse[1]}
+                    src={`${baseURLPath}/${imgHouse.name}.png`}
+                    alt={imgHouse.alt}
                 />
             </figure>
         </HouseContainer>

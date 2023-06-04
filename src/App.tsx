@@ -90,10 +90,10 @@ function App() {
                                     figcaption: 'Determinação',
                                 },
                             ]}
-                            imgHouse={[
-                                'gryffindor',
-                                'Brasão da Grifinória e o personagem Harry Potter acima dele.',
-                            ]}
+                            imgHouse={{
+                                name: 'gryffindor',
+                                alt: 'Brasão da Grifinória e o personagem Harry Potter acima dele.',
+                            }}
                         />
                         <House
                             houseTitle="Sonserina"
@@ -116,10 +116,10 @@ function App() {
                                     figcaption: 'Ambição',
                                 },
                             ]}
-                            imgHouse={[
-                                'slytherin',
-                                'Brasão da Sonserina e o personagem Draco Malfoy acima dele.',
-                            ]}
+                            imgHouse={{
+                                name: 'slytherin',
+                                alt: 'Brasão da Sonserina e o personagem Draco Malfoy acima dele.',
+                            }}
                         />
                         <House
                             houseTitle="Corvinal"
@@ -140,10 +140,10 @@ function App() {
                                     figcaption: 'Conhecimento',
                                 },
                             ]}
-                            imgHouse={[
-                                'ravenclaw',
-                                'Brasão da Corvinal e a personagem Luna Lovegood acima dele.',
-                            ]}
+                            imgHouse={{
+                                name: 'ravenclaw',
+                                alt: 'Brasão da Corvinal e a personagem Luna Lovegood acima dele.',
+                            }}
                         />
                         <House
                             houseTitle="Lufa-Lufa"
@@ -162,10 +162,10 @@ function App() {
                                     figcaption: 'Lealdade',
                                 },
                             ]}
-                            imgHouse={[
-                                'hufflepuff',
-                                'Brasão da Lufa-Lufa e o personagem Cedrico Diggory acima dele.',
-                            ]}
+                            imgHouse={{
+                                name: 'hufflepuff',
+                                alt: 'Brasão da Lufa-Lufa e o personagem Cedrico Diggory acima dele.',
+                            }}
                         />
                     </Container>
                 </Houses>
