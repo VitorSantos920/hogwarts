@@ -1,11 +1,16 @@
 import { FiChevronsDown } from 'react-icons/fi';
+
 import { Header } from './components/Header';
 import { Button } from './components/Button';
+import { House } from './components/House';
+
 import { Home } from './styles/Home';
 import { History } from './styles/History';
 import { Houses } from './styles/Houses';
 import { Container } from './styles/Container';
-import { House } from './components/House';
+import { MainHall } from './styles/MainHall';
+
+import MainHallImg from './img/mainHall.png';
 
 function App() {
     return (
@@ -169,6 +174,35 @@ function App() {
                         />
                     </Container>
                 </Houses>
+
+                <MainHall className="mainhall flex">
+                    <Container>
+                        <img
+                            src={MainHallImg}
+                            className="mainhall__img"
+                            alt="Salão Principal de Hogwarts."
+                        />
+                        <div className="mainhall__content flex">
+                            <h3 className="mainhall__title">Salão Principal</h3>
+                            <p className="mainhall__description">
+                                Considerada a principal área de recolhimento e é
+                                onde os alunos fazem suas refeições (café da
+                                manhã, almoço e jantar), recebem diariamente o
+                                correio coruja, e têm certos eventos especiais
+                                lá. Pode facilmente comportar todos os alunos,
+                                funcionários e convidados da escola. Possui
+                                muros altos que chegam até o teto, que é coberto
+                                com velas e encantado para parecer com o céu
+                                acima. Na parte da frente do salão, é a tabela
+                                de funcionários, também conhecida como a Mesa
+                                Principal, que é projetada para abrigar toda a
+                                equipe de Hogwarts, e seu ponto mais alto é a
+                                cadeira central onde o (a) atual diretor (a) se
+                                senta.
+                            </p>
+                        </div>
+                    </Container>
+                </MainHall>
             </main>
         </div>
     );
