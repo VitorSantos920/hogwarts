@@ -22,5 +22,22 @@ export const MainHall = styled('section', {
                 width: '70%',
             },
         },
+        '@bp3': {
+            '.mainhall__content': {
+                alignItems: 'center',
+                flexDirection: 'column',
+
+                '.mainhall__description': {
+                    marginLeft: '0',
+                    width: '100%',
+                },
+            },
+        },
+
+        '@bp2': {
+            '.mainhall__title': {
+                textAlign: 'center',
+            },
+        },
     },
 });
