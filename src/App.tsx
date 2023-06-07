@@ -11,6 +11,7 @@ import { Container } from './styles/Container';
 import { MainHall } from './styles/MainHall';
 
 import MainHallImg from './img/mainHall.png';
+import { Dumbledore, InitialContent } from './styles/Dumbledore';
 
 function App() {
     return (
@@ -27,7 +28,6 @@ function App() {
                         <FiChevronsDown className="home__arrowDown" size={72} />
                     </a>
                 </Home>
-
                 <History className="history flex" id="history">
                     <Container className="flex">
                         <h3 className="history__title">
@@ -58,7 +58,6 @@ function App() {
                         </div>
                     </Container>
                 </History>
-
                 <Houses className="houses flex">
                     <Container className="flex">
                         <h3 className="houses__title">Casas</h3>
@@ -174,7 +173,6 @@ function App() {
                         />
                     </Container>
                 </Houses>
-
                 <MainHall className="mainhall flex">
                     <Container>
                         <img
@@ -203,6 +201,41 @@ function App() {
                         </div>
                     </Container>
                 </MainHall>
+                <Dumbledore className="dumbledore flex">
+                    <Container>
+                        <InitialContent>
+                            <div className="dumbledore__initial-content">
+                                <h3 className="dumbledore__title">
+                                    Alvo <br /> Dumbledore
+                                </h3>
+                                <p className="dumbledore__phrase">
+                                    "Não vale a pena viver sonhando, e se
+                                    esquecer de viver."
+                                </p>
+                            </div>
+                        </InitialContent>
+                        <div>
+                            <p className="dumbledore__about">
+                                O professor Alvo Percival Wulfrico Brian
+                                Dumbledore foi um bruxo inglês mestiço que
+                                ocupou o cargo de professor nas matérias de
+                                Defesa Contra as Artes das Trevas e
+                                Transfiguração, bem como diretor, na Escola de
+                                Magia e Bruxaria de Hogwarts. Ele também atuou
+                                como Cacique Supremo da Confederação
+                                Internacional dos Bruxos e Bruxo Chefe da
+                                Suprema Corte dos Bruxos. Um bruxo que apoiava
+                                os direitos dos trouxas, embora o oposto
+                                completo durante sua juventude, e que foi
+                                considerado o maior bruxos dos tempos modernos
+                                e, talvez, de todos os tempos.
+                            </p>
+                            <Button className="dumbledore__btn">
+                                Ler bibliografia
+                            </Button>
+                        </div>
+                    </Container>
+                </Dumbledore>
             </main>
         </div>
     );
