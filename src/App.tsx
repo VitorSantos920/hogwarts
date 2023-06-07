@@ -1,4 +1,5 @@
 import { FiChevronsDown } from 'react-icons/fi';
+import { BsArrowRight } from 'react-icons/bs';
 
 import { Header } from './components/Header';
 import { Button } from './components/Button';
@@ -13,6 +14,7 @@ import { MainHall } from './styles/MainHall';
 import MainHallImg from './img/mainHall.png';
 import { Dumbledore, InitialContent } from './styles/Dumbledore';
 import { Protections } from './styles/Protections';
+import { CTA } from './styles/CTA';
 
 function App() {
     return (
@@ -263,6 +265,18 @@ function App() {
                         </p>
                     </Container>
                 </Protections>
+                <CTA className="cta flex">
+                    <Container>
+                        <h4 className="cta__subtitle">Se interessou?</h4>
+
+                        <div className="readmore flex">
+                            <a href="" className="cta__title">
+                                Leia mais
+                                <BsArrowRight className="cta__icon" />
+                            </a>
+                        </div>
+                    </Container>
+                </CTA>
             </main>
         </div>
     );
