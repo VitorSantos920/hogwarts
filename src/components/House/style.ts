@@ -17,7 +17,7 @@ export const HouseContainer = styled('section', {
         width: '42%',
 
         '.house__phrase': {
-            margin: '$phrase 0',
+            margin: '$pSpace 0',
         },
 
         '&::before': {

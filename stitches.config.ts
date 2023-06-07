@@ -29,7 +29,7 @@ export const stitches = createStitches({
         },
         space: {
             section: '174px',
-            phrase: '30px',
+            pSpace: '30px',
         },
         lineHeights: {
             1: 2.5,
