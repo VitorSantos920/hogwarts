@@ -12,6 +12,7 @@ import { MainHall } from './styles/MainHall';
 
 import MainHallImg from './img/mainHall.png';
 import { Dumbledore, InitialContent } from './styles/Dumbledore';
+import { Protections } from './styles/Protections';
 
 function App() {
     return (
@@ -236,6 +237,32 @@ function App() {
                         </div>
                     </Container>
                 </Dumbledore>
+                <Protections className="protections flex">
+                    <Container>
+                        <h3 className="protections__title">Suas proteções!</h3>
+                        <p className="protections__description">
+                            Toda propriedade bruxa é protegida por
+                            encantamentos, e o Castelo de Hogwarts não é
+                            diferente. Proteções antimágicas e antitrouxas são
+                            realizados para garantir a segurança do Castelo. Por
+                            exemplo, é impossivel aparatar no terreno, apesar de
+                            que, em algumas situações, permissões especiais são
+                            concedidas para poder realizar tal ação. Assim como
+                            o Salgueiro Lutador, que guarda uma das entradas.
+                            Junto a isso, como mencionado, precauções
+                            antitrouxas também são tomadas: se um trouxa olhar
+                            para o Castelo, apenas observará uma ruína
+                            embolorada com um letreiro dizendo: “PERIGO, NÃO
+                            ENTRE, ARRISCADO”, juntamente das próprias proteções
+                            naturais do terreno, que é de difícil acesso, e não
+                            ser mapeável (impossível ser localizado em mapas).
+                            Ainda é possível enfetiçar uma propriedade (lugar,
+                            construção, etc) para que, caso um trouxa se dirija
+                            a ela, se lembre imediatamente de um compromisso
+                            urgente e inevitável, assim, abandonando o lugar.
+                        </p>
+                    </Container>
+                </Protections>
             </main>
         </div>
     );
