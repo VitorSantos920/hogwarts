@@ -4,16 +4,12 @@ import DumbledoreImg from '../img/dumbledore.png';
 const { styled } = stitches;
 
 export const Dumbledore = styled('section', {
-    '> div > div:last-child': {
-        padding: '0 3rem',
+    '.dumbledore__about': {
+        margin: '21px 0',
+    },
 
-        '.dumbledore__about': {
-            margin: '21px 0',
-        },
-
-        '.dumbledore__btn': {
-            width: '20%',
-        },
+    '.dumbledore__btn': {
+        width: '20%',
     },
 });
 
