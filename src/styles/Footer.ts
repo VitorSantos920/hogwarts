@@ -59,5 +59,20 @@ export const Footer = styled('footer', {
                 alignItems: 'center',
             },
         },
+
+        '@bp1': {
+            '.footer__top, .footer__bottom': {
+                width: '90%',
+            },
+        },
+
+        '@bp4': {
+            '.footer__top, .footer__bottom': {
+                textAlign: 'center',
+                gap: '2rem',
+                justifyContent: 'center',
+                flexDirection: 'column',
+            },
+        },
     },
 });

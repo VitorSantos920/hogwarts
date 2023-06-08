@@ -39,6 +39,7 @@ export const stitches = createStitches({
         bp1: '(max-width: 950px)',
         bp2: '(max-width: 820px)',
         bp3: '(max-width: 1150px)',
+        bp4: '(max-width: 770px)',
     },
 });
 
