@@ -120,6 +120,10 @@ export const HouseContainer = styled('section', {
                         textAlign: 'right',
                     },
 
+                    '.house__about': {
+                        textAlignLast: 'right',
+                    },
+
                     '.house__title, figcaption': {
                         color: '$house__slythColor',
                     },
@@ -161,6 +165,10 @@ export const HouseContainer = styled('section', {
 
                     '.house__phrase': {
                         textAlign: 'right',
+                    },
+
+                    '.house__about': {
+                        textAlignLast: 'right',
                     },
 
                     '.house__title, figcaption': {
