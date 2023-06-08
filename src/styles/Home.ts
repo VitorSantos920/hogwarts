@@ -34,4 +34,12 @@ export const Home = styled('section', {
             color: '$lightGray',
         },
     },
+
+    '@bp5': {
+        '.home__title': { fontSize: '7rem' },
+        '.home__subtitle': { fontSize: '2rem' },
+    },
+    '@bp6': {
+        '.home__title': { fontSize: '5rem' },
+    },
 });

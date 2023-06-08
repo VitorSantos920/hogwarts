@@ -40,6 +40,8 @@ export const stitches = createStitches({
         bp2: '(max-width: 820px)',
         bp3: '(max-width: 1150px)',
         bp4: '(max-width: 770px)',
+        bp5: '(max-width: 650px)',
+        bp6: '(max-width: 490px)',
     },
 });
 

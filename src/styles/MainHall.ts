@@ -21,22 +21,29 @@ export const MainHall = styled('section', {
                 marginLeft: '5%',
                 width: '70%',
             },
-        },
-        '@bp3': {
-            '.mainhall__content': {
-                alignItems: 'center',
-                flexDirection: 'column',
 
-                '.mainhall__description': {
-                    marginLeft: '0',
-                    width: '100%',
+            '@bp2': {
+                '.mainhall__title': {
+                    textAlign: 'center',
                 },
             },
-        },
 
-        '@bp2': {
-            '.mainhall__title': {
-                textAlign: 'center',
+            '@bp3': {
+                '&': {
+                    alignItems: 'center',
+                    flexDirection: 'column',
+
+                    '.mainhall__description': {
+                        marginLeft: '0',
+                        width: '100%',
+                    },
+                },
+            },
+
+            '@bp6': {
+                '.mainhall__title': {
+                    fontSize: '5rem',
+                },
             },
         },
     },

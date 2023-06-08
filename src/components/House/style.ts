@@ -55,7 +55,7 @@ export const HouseContainer = styled('section', {
         flexWrap: 'wrap-reverse',
 
         '.house__content': {
-            width: '70%',
+            width: '85%',
             textAlign: 'center !important',
 
             p: {
@@ -77,6 +77,17 @@ export const HouseContainer = styled('section', {
 
         '.house__img': {
             width: '70%',
+        },
+    },
+
+    '@bp6': {
+        '.house__title': {
+            fontSize: '4.5rem',
+        },
+
+        '.house__characteristics': {
+            flexDirection: 'column',
+            gap: '2rem',
         },
     },
 

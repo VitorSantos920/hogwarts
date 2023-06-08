@@ -28,12 +28,9 @@ export const Footer = styled('footer', {
             },
         },
 
-        '.footer__link, span, .footer__about, p': {
+        '.footer__link, span, .footer__about': {
             fontSize: '1.225rem',
-
-            '&:not(.footer__author-credits p)': {
-                color: '$lightGray',
-            },
+            color: '$lightGray',
         },
 
         '.footer__link:hover': {
@@ -72,6 +69,14 @@ export const Footer = styled('footer', {
                 gap: '2rem',
                 justifyContent: 'center',
                 flexDirection: 'column',
+            },
+
+            '.footer__author-credits': {
+                flexDirection: 'column',
+
+                p: {
+                    textAlign: 'center',
+                },
             },
         },
     },

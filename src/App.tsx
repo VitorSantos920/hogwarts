@@ -218,7 +218,7 @@ function App() {
                                 </p>
                             </div>
                         </InitialContent>
-                        <div>
+                        <div className="dumbledore__content">
                             <p className="dumbledore__about">
                                 O professor Alvo Percival Wulfrico Brian
                                 Dumbledore foi um bruxo inglês mestiço que
