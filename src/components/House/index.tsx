@@ -39,7 +39,7 @@ export function House({
                 <div className="house__characteristics flex">
                     <figure className="house__characteristic">
                         <img
-                            src={`${baseURLPath}/${imgCharacteristics[0].name}.svg`}
+                            src={`${baseURLPath}${imgCharacteristics[0].name}.svg`}
                             alt={imgCharacteristics[0].alt}
                         />
                         <figcaption>
@@ -49,7 +49,7 @@ export function House({
 
                     <figure className="house__characteristic">
                         <img
-                            src={`${baseURLPath}/${imgCharacteristics[1].name}.svg`}
+                            src={`${baseURLPath}${imgCharacteristics[1].name}.svg`}
                             alt={imgCharacteristics[1].alt}
                         />
                         <figcaption>
@@ -66,7 +66,7 @@ export function House({
             </div>
             <figure className="house__img">
                 <img
-                    src={`${baseURLPath}/${imgHouse.name}.png`}
+                    src={`${baseURLPath}${imgHouse.name}.png`}
                     alt={imgHouse.alt}
                 />
             </figure>
