@@ -10,12 +10,13 @@ import { History } from './styles/History';
 import { Houses } from './styles/Houses';
 import { Container } from './styles/Container';
 import { MainHall } from './styles/MainHall';
-
-import MainHallImg from './img/mainHall.png';
 import { Dumbledore, InitialContent } from './styles/Dumbledore';
 import { Protections } from './styles/Protections';
 import { CTA } from './styles/CTA';
+import { Footer } from './styles/Footer';
 
+import MainHallImg from './img/mainHall.png';
+import VSLogo from './img/VSLogo.png';
 function App() {
     return (
         <div className="App">
@@ -278,6 +279,74 @@ function App() {
                     </Container>
                 </CTA>
             </main>
+
+            <Footer className="footer flex">
+                <Container className="flex">
+                    <section className="footer__top flex">
+                        <div className="footer__col-1">
+                            <h5 className="footer__title">Início</h5>
+                            <a href="#" className="footer__link">
+                                Home
+                            </a>
+                            <a href="#" className="footer__link">
+                                História
+                            </a>
+                            <a href="#" className="footer__link">
+                                Casas
+                            </a>
+                            <a href="#" className="footer__link">
+                                Dumbledore
+                            </a>
+                        </div>
+                        <div className="footer__col-2">
+                            <h5 className="footer__title">Siga-me</h5>
+                            <a href="#" className="footer__link">
+                                Github
+                            </a>
+                            <a href="#" className="footer__link">
+                                LinkedIn
+                            </a>
+                        </div>
+                        <div className="footer__col-3">
+                            <h5 className="footer__title">Créditos</h5>
+                            <span>
+                                Ícones por:{' '}
+                                <a href="#" className="footer__link">
+                                    Flaticon
+                                </a>
+                            </span>
+                            <span>
+                                Informações por:{' '}
+                                <a href="#" className="footer__link">
+                                    Harry Potter Wiki
+                                </a>
+                            </span>
+                        </div>
+                    </section>
+
+                    <section className="footer__bottom flex">
+                        <div className="footer__hogwarts">
+                            <a href="" className="footer__logo">
+                                HW
+                            </a>
+                            <p className="footer__about">
+                                Página ilustrativa de Hogwarts.
+                            </p>
+                        </div>
+                        <div className="footer__author-credits flex">
+                            <img
+                                src={VSLogo}
+                                draggable="false"
+                                alt="Logo de Vitor Santos."
+                            />
+                            <div>
+                                <p>&copy; 2023 - Vitor Santos.</p>
+                                <p>Feito em Campinas, São Paulo.</p>
+                            </div>
+                        </div>
+                    </section>
+                </Container>
+            </Footer>
         </div>
     );
 }
