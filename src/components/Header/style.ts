@@ -7,6 +7,8 @@ export const HeaderContainer = styled('header', {
     position: 'fixed',
     width: '100vw',
     zIndex: 1,
+    backdropFilter: 'blur( 9.5px )',
+    webkitBackdropFilter: 'blur( 9.5px )',
 });
 
 export const DivHeaderContainer = styled('div', {
@@ -15,7 +17,7 @@ export const DivHeaderContainer = styled('div', {
     fontFamily: '$title',
     justifyContent: 'space-between',
     maxWidth: '1266px',
-    paddingTop: '1.3rem',
+    padding: '1.3rem 0',
     transition: 'all 0.3s',
     width: '80%',
 
