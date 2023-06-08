@@ -25,6 +25,8 @@ export function House({
 
     imgHouse,
 }: HouseProps) {
+    const wikiBaseURL = 'https://harrypotter.fandom.com/pt-br/wiki';
+
     return (
         <HouseContainer className="house flex" house={`${imgHouse.name}`}>
             <div className="house__content">
@@ -54,9 +56,11 @@ export function House({
                     </figure>
                 </div>
 
-                <Button className="house__btn" house={`${imgHouse.name}`}>
-                    Leia Mais
-                </Button>
+                <a href={`${wikiBaseURL}/${houseTitle}`} target="_blank">
+                    <Button className="house__btn" house={`${imgHouse.name}`}>
+                        Leia Mais
+                    </Button>
+                </a>
             </div>
             <figure className="house__img">
                 <img

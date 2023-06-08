@@ -18,6 +18,8 @@ import { Footer } from './styles/Footer';
 import MainHallImg from './img/mainHall.png';
 import VSLogo from './img/VSLogo.png';
 function App() {
+    const wikiBaseURL = 'https://harrypotter.fandom.com/pt-br/wiki';
+
     return (
         <div className="App">
             <Header />
@@ -58,7 +60,12 @@ function App() {
                                 </span>
                                 .
                             </p>
-                            <Button>Leia Mais</Button>
+                            <a
+                                href={`${wikiBaseURL}/Escola_de_Magia_e_Bruxaria_de_Hogwarts`}
+                                target="_blank"
+                            >
+                                <Button>Leia Mais</Button>
+                            </a>
                         </div>
                     </Container>
                 </History>
@@ -234,9 +241,14 @@ function App() {
                                 considerado o maior bruxos dos tempos modernos
                                 e, talvez, de todos os tempos.
                             </p>
-                            <Button className="dumbledore__btn">
-                                Ler bibliografia
-                            </Button>
+                            <a
+                                href={`${wikiBaseURL}/Alvo_Dumbledore`}
+                                target="_blank"
+                            >
+                                <Button className="dumbledore__btn">
+                                    Ler bibliografia
+                                </Button>
+                            </a>
                         </div>
                     </Container>
                 </Dumbledore>
@@ -271,7 +283,11 @@ function App() {
                         <h4 className="cta__subtitle">Se interessou?</h4>
 
                         <div className="readmore flex">
-                            <a href="" className="cta__title">
+                            <a
+                                href={`${wikiBaseURL}/Página_Principal`}
+                                target="_blank"
+                                className="cta__title"
+                            >
                                 Leia mais
                                 <BsArrowRight className="cta__icon" />
                             </a>
@@ -300,10 +316,18 @@ function App() {
                         </div>
                         <div className="footer__col-2">
                             <h5 className="footer__title">Siga-me</h5>
-                            <a href="#" className="footer__link">
+                            <a
+                                href="https://github.com/vitorsantos920"
+                                target="_blank"
+                                className="footer__link"
+                            >
                                 Github
                             </a>
-                            <a href="#" className="footer__link">
+                            <a
+                                href="https://linkedin.com/in/vitor-hp-santos"
+                                target="_blank"
+                                className="footer__link"
+                            >
                                 LinkedIn
                             </a>
                         </div>
@@ -311,13 +335,21 @@ function App() {
                             <h5 className="footer__title">Créditos</h5>
                             <span>
                                 Ícones por:{' '}
-                                <a href="#" className="footer__link">
+                                <a
+                                    href="https://www.flaticon.com/br/"
+                                    target="_blank"
+                                    className="footer__link"
+                                >
                                     Flaticon
                                 </a>
                             </span>
                             <span>
                                 Informações por:{' '}
-                                <a href="#" className="footer__link">
+                                <a
+                                    href={`${wikiBaseURL}/Página_Principal`}
+                                    target="_blank"
+                                    className="footer__link"
+                                >
                                     Harry Potter Wiki
                                 </a>
                             </span>
