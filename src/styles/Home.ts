@@ -31,8 +31,7 @@ export const Home = styled('section', {
         transition: 'all 1s',
 
         '&:hover': {
-            boxShadow: '0 0 40px 4px #fff',
-            backgroundClip: 'border-box',
+            color: '$lightGray',
         },
     },
 });
