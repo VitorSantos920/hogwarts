@@ -5,14 +5,16 @@ interface HouseProps {
     houseTitle: string;
     housePhrase: string;
     houseAbout: string;
-
     baseURLPath: string;
     imgCharacteristics: [
         { name: string; alt: string; figcaption: string },
         { name: string; alt: string; figcaption: string }
     ];
 
-    imgHouse: { name: string; alt: string };
+    imgHouse: {
+        name: 'gryffindor' | 'slytherin' | 'ravenclaw' | 'hufflepuff';
+        alt: string;
+    };
 }
 
 export function House({
@@ -28,7 +30,7 @@ export function House({
     const wikiBaseURL = 'https://harrypotter.fandom.com/pt-br/wiki';
 
     return (
-        <HouseContainer className="house flex" house={`${imgHouse.name}`}>
+        <HouseContainer className="house flex" house={imgHouse.name}>
             <div className="house__content">
                 <h3 className="house__title">{houseTitle}</h3>
                 <p className="house__phrase">{housePhrase}</p>
@@ -57,7 +59,7 @@ export function House({
                 </div>
 
                 <a href={`${wikiBaseURL}/${houseTitle}`} target="_blank">
-                    <Button className="house__btn" house={`${imgHouse.name}`}>
+                    <Button className="house__btn" house={imgHouse.name}>
                         Leia Mais
                     </Button>
                 </a>
