@@ -22,7 +22,7 @@ function App() {
         <div className="App">
             <Header />
             <main className="main">
-                <Home className="home flex">
+                <Home className="home flex" id="home">
                     <h1 className="home__title">Hogwarts</h1>
                     <h2 className="home__subtitle">
                         “Draco Dormiens Nunquam Titillandus.”
@@ -62,7 +62,7 @@ function App() {
                         </div>
                     </Container>
                 </History>
-                <Houses className="houses flex">
+                <Houses className="houses flex" id="houses">
                     <Container className="flex">
                         <h3 className="houses__title">Casas</h3>
                         <p className="houses__description">
@@ -205,7 +205,7 @@ function App() {
                         </div>
                     </Container>
                 </MainHall>
-                <Dumbledore className="dumbledore flex">
+                <Dumbledore className="dumbledore flex" id="dumbledore">
                     <Container>
                         <InitialContent>
                             <div className="dumbledore__initial-content">
@@ -240,7 +240,7 @@ function App() {
                         </div>
                     </Container>
                 </Dumbledore>
-                <Protections className="protections flex">
+                <Protections className="protections flex" id="protections">
                     <Container>
                         <h3 className="protections__title">Suas proteções!</h3>
                         <p className="protections__description">
@@ -285,16 +285,16 @@ function App() {
                     <section className="footer__top flex">
                         <div className="footer__col-1">
                             <h5 className="footer__title">Início</h5>
-                            <a href="#" className="footer__link">
+                            <a href="#home" className="footer__link">
                                 Home
                             </a>
-                            <a href="#" className="footer__link">
+                            <a href="#history" className="footer__link">
                                 História
                             </a>
-                            <a href="#" className="footer__link">
+                            <a href="#houses" className="footer__link">
                                 Casas
                             </a>
-                            <a href="#" className="footer__link">
+                            <a href="#dumbledore" className="footer__link">
                                 Dumbledore
                             </a>
                         </div>

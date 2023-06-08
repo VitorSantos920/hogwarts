@@ -19,16 +19,33 @@ export function Header() {
                         }`}
                     >
                         <li className="header__item">
-                            <a href="https://youtube.com">Home</a>
+                            <a href="#home" onClick={() => setIsOpen(!isOpen)}>
+                                Home
+                            </a>
                         </li>
                         <li className="header__item">
-                            <a href="#">História</a>
+                            <a
+                                href="#history"
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
+                                História
+                            </a>
                         </li>
                         <li className="header__item">
-                            <a href="#">Casas</a>
+                            <a
+                                href="#houses"
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
+                                Casas
+                            </a>
                         </li>
                         <li className="header__item">
-                            <a href="#">Dumbledore</a>
+                            <a
+                                href="#dumbledore"
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
+                                Dumbledore
+                            </a>
                         </li>
                     </ListContainer>
                 </nav>
