@@ -1,7 +1,7 @@
 import { keyframes } from '@stitches/react';
 import { stitches } from '../../stitches.config';
 
-import background from '../img/bgHogwarts.jpeg';
+// import background from '../img/bgHogwarts.jpeg';
 
 const { styled } = stitches;
 
@@ -12,7 +12,7 @@ const move = keyframes({
 
 export const Home = styled('section', {
     alignItems: 'center',
-    background: `url(${background}) fixed center no-repeat `,
+    background: `url(bgHogwarts.jpeg) fixed center no-repeat `,
     backgroundSize: 'cover',
     color: '#fff',
     flexDirection: 'column',

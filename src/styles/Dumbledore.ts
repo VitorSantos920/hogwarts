@@ -1,5 +1,5 @@
 import { stitches } from '../../stitches.config';
-import DumbledoreImg from '../img/dumbledore.png';
+// import DumbledoreImg from '../img/dumbledore.png';
 
 const { styled } = stitches;
 
@@ -22,7 +22,7 @@ export const Dumbledore = styled('section', {
 });
 
 export const InitialContent = styled('div', {
-    background: `url(${DumbledoreImg}) no-repeat top`,
+    background: `url(dumbledore.png) no-repeat top`,
     backgroundSize: 'cover',
     padding: '5rem',
     height: '1000px',

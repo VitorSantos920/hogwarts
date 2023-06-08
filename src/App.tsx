@@ -15,8 +15,8 @@ import { Protections } from './styles/Protections';
 import { CTA } from './styles/CTA';
 import { Footer } from './styles/Footer';
 
-import MainHallImg from './img/mainHall.png';
-import VSLogo from './img/VSLogo.png';
+// import MainHallImg from './img/mainHall.png';
+// import VSLogo from './img/VSLogo.png';
 function App() {
     const wikiBaseURL = 'https://harrypotter.fandom.com/pt-br/wiki';
 
@@ -92,7 +92,6 @@ function App() {
                             housePhrase='"Enquanto os mais corajosos e ousados foram para o destemido Grifinória."'
                             houseAbout="Sendo uma das quatro casas da Escola de Magia e Bruxaria de Hogwarts, a Grifinória foi fundada por Godrico Gryffindor. Suas cores são o Escarlarte e o Ouro, possui como animal emblemático o Leão e corresponde ao elemento Fogo.
                             O Fantasma Patrono da Grifinória é Sir Nicholas de Mimsy-Porpington, mais conhecido como “Nick Quase-Sem-Cabeça."
-                            baseURLPath="./src/img/"
                             imgCharacteristics={[
                                 {
                                     name: 'courage',
@@ -118,7 +117,6 @@ function App() {
                             Apesar de qualquer status sanguíneo ser aceito em Sonserina, seu fundador prezava e valorizava os estudantes de Sangue Puro.
                             O animal emblemático desta casa é uma Serpente e suas cores são Verde e Prata e corresponde ao elemento Água.
                             O Fantasma Patrono da Sonserina é o Barão Sangrento."
-                            baseURLPath="./src/img/"
                             imgCharacteristics={[
                                 {
                                     name: 'leadership',
@@ -142,7 +140,6 @@ function App() {
                             houseAbout="Fundada por Rowena Ravenclaw, a Corvinal é uma das quatro casas de Hogwarts.
                             Suas cores representativas são o Azul e o Bronze e seu animal emblemático é uma Águia.
                             O Fantasma Patrono da Corvinal é a Dama Cinzenta e corresponde ao elemento Ar, com o azul representando o céu e o bronze as penas de uma águia, possuindo relação direta com o elemento."
-                            baseURLPath="./src/img/"
                             imgCharacteristics={[
                                 {
                                     name: 'intelligence',
@@ -164,7 +161,6 @@ function App() {
                             houseTitle="Lufa-Lufa"
                             housePhrase='"A boa Lufa-Lufa recebeu os restantes e lhes ensinou tudo que conhecia."'
                             houseAbout="A Lufa-Lufa foi fundada por Helga Hufflepuff e faz parte do grupo de 4 casas de Hogwarts, sendo conhecida por ser a mais inclusiva de todas. Seu animal emblemático é um texugo e suas cores são o Amarelo, que representa o trigo, e o Preto, que simboliza o solo. Por isso, a Lufa-Lufa corresponde ao elemento Terra. Os alunos desta casa possuem excelentes habilidades com a matéria de Herbologia, graças a esta correspondência. Seu Fantasma Patrono é o Frei Gorducho."
-                            baseURLPath="./src/img/"
                             imgCharacteristics={[
                                 {
                                     name: 'dedication',
@@ -187,7 +183,7 @@ function App() {
                 <MainHall className="mainhall flex">
                     <Container>
                         <img
-                            src={MainHallImg}
+                            src="mainHall.png"
                             className="mainhall__img"
                             alt="Salão Principal de Hogwarts."
                         />
@@ -367,7 +363,7 @@ function App() {
                         </div>
                         <div className="footer__author-credits flex">
                             <img
-                                src={VSLogo}
+                                src="VSLogo.png"
                                 draggable="false"
                                 alt="Logo de Vitor Santos."
                             />

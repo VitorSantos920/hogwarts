@@ -5,12 +5,10 @@ interface HouseProps {
     houseTitle: string;
     housePhrase: string;
     houseAbout: string;
-    baseURLPath: string;
     imgCharacteristics: [
         { name: string; alt: string; figcaption: string },
         { name: string; alt: string; figcaption: string }
     ];
-
     imgHouse: {
         name: 'gryffindor' | 'slytherin' | 'ravenclaw' | 'hufflepuff';
         alt: string;
@@ -21,10 +19,7 @@ export function House({
     houseTitle,
     housePhrase,
     houseAbout,
-
-    baseURLPath,
     imgCharacteristics,
-
     imgHouse,
 }: HouseProps) {
     const wikiBaseURL = 'https://harrypotter.fandom.com/pt-br/wiki';
@@ -39,7 +34,7 @@ export function House({
                 <div className="house__characteristics flex">
                     <figure className="house__characteristic">
                         <img
-                            src={`${baseURLPath}${imgCharacteristics[0].name}.svg`}
+                            src={`${imgCharacteristics[0].name}.svg`}
                             alt={imgCharacteristics[0].alt}
                         />
                         <figcaption>
@@ -49,7 +44,7 @@ export function House({
 
                     <figure className="house__characteristic">
                         <img
-                            src={`${baseURLPath}${imgCharacteristics[1].name}.svg`}
+                            src={`${imgCharacteristics[1].name}.svg`}
                             alt={imgCharacteristics[1].alt}
                         />
                         <figcaption>
@@ -65,10 +60,7 @@ export function House({
                 </a>
             </div>
             <figure className="house__img">
-                <img
-                    src={`${baseURLPath}${imgHouse.name}.png`}
-                    alt={imgHouse.alt}
-                />
+                <img src={`${imgHouse.name}.png`} alt={imgHouse.alt} />
             </figure>
         </HouseContainer>
     );
