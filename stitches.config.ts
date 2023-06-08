@@ -98,7 +98,13 @@ const injectGlobalStyles = stitches.globalCss({
     },
 
     '::-webkit-scrollbar': {
-        display: 'none',
+        background: 'transparent',
+        width: 10,
+    },
+
+    '::-webkit-scrollbar-thumb': {
+        background: '#fff',
+        borderRadius: '1rem',
     },
 });
 
