@@ -6,9 +6,7 @@ export const Houses = styled('section', {
     '& > div': {
         flexDirection: 'column',
 
-        '.houses__title': {
-            fontSize: '$title',
-        },
+        '.houses__title': { fontSize: '$title' },
 
         '.houses__description': {
             textAlign: 'center',

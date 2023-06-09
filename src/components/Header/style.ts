@@ -3,12 +3,12 @@ import { stitches } from '../../../stitches.config';
 const { styled } = stitches;
 
 export const HeaderContainer = styled('header', {
+    backdropFilter: 'blur( 9.5px )',
     justifyContent: 'center',
     position: 'fixed',
+    webkitBackdropFilter: 'blur( 9.5px )',
     width: '100vw',
     zIndex: 1,
-    backdropFilter: 'blur( 9.5px )',
-    webkitBackdropFilter: 'blur( 9.5px )',
 });
 
 export const DivHeaderContainer = styled('div', {
@@ -66,13 +66,13 @@ export const ListContainer = styled('ul', {
 
         '&::before': {
             backgroundColor: '#fff',
-            top: 0,
             content: '',
+            height: '100%',
             left: 0,
             position: 'absolute',
             transition: '1s',
+            top: 0,
             width: 0,
-            height: '100%',
             zIndex: -1,
         },
 

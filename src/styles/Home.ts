@@ -1,8 +1,6 @@
 import { keyframes } from '@stitches/react';
 import { stitches } from '../../stitches.config';
 
-// import background from '../img/bgHogwarts.jpeg';
-
 const { styled } = stitches;
 
 const move = keyframes({
@@ -30,9 +28,7 @@ export const Home = styled('section', {
         animation: `${move} 1s ease-in-out infinite alternate`,
         transition: 'all 1s',
 
-        '&:hover': {
-            color: '$lightGray',
-        },
+        '&:hover': { color: '$lightGray' },
     },
 
     '@bp5': {

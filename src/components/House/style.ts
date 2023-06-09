@@ -16,17 +16,15 @@ export const HouseContainer = styled('section', {
     '.house__content': {
         width: '42%',
 
-        '.house__phrase': {
-            margin: '$pSpace 0',
-        },
+        '.house__phrase': { margin: '$pSpace 0' },
 
         '&::before': {
+            animation: `${brightness} 2s infinite alternate-reverse ease-in-out`,
             content: '',
+            filter: 'blur(110px)',
+            height: '100%',
             position: 'absolute',
             width: 70,
-            height: '100%',
-            filter: 'blur(110px)',
-            animation: `${brightness} 2s infinite alternate-reverse ease-in-out`,
         },
     },
 
@@ -37,18 +35,14 @@ export const HouseContainer = styled('section', {
         figure: {
             textAlign: 'center',
 
-            figcaption: {
-                fontSize: '$figcaption',
-            },
+            figcaption: { fontSize: '$figcaption' },
         },
     },
 
     '.house__img': {
         width: '35%',
 
-        img: {
-            width: '100%',
-        },
+        img: { width: '100%' },
     },
 
     '@bp2': {
@@ -58,32 +52,20 @@ export const HouseContainer = styled('section', {
             width: '85%',
             textAlign: 'center !important',
 
-            p: {
-                textAlign: 'justify !important',
-            },
+            p: { textAlign: 'justify !important' },
 
-            '&::before': {
-                display: 'none',
-            },
+            '&::before': { display: 'none' },
 
-            '.house__characteristics': {
-                justifyContent: 'space-around',
-            },
+            '.house__characteristics': { justifyContent: 'space-around' },
 
-            '.house__btn': {
-                width: '100%',
-            },
+            '.house__btn': { width: '100%' },
         },
 
-        '.house__img': {
-            width: '70%',
-        },
+        '.house__img': { width: '70%' },
     },
 
     '@bp6': {
-        '.house__title': {
-            fontSize: '4.5rem',
-        },
+        '.house__title': { fontSize: '4.5rem' },
 
         '.house__characteristics': {
             flexDirection: 'column',
@@ -99,17 +81,13 @@ export const HouseContainer = styled('section', {
                         backgroundColor: '$house__gryffColor',
                     },
 
-                    '&::before': {
-                        backgroundColor: '$house__gryffColor',
-                    },
+                    '&::before': { backgroundColor: '$house__gryffColor' },
                     '.house__title, figcaption': {
                         color: '$house__gryffColor',
                     },
 
                     '@bp3': {
-                        figcaption: {
-                            fontSize: '2rem !important',
-                        },
+                        figcaption: { fontSize: '2rem !important' },
                     },
                 },
             },
@@ -123,17 +101,11 @@ export const HouseContainer = styled('section', {
                         backgroundColor: '$house__slythColor',
                     },
 
-                    '&::before': {
-                        backgroundColor: '$house__slythColor',
-                    },
+                    '&::before': { backgroundColor: '$house__slythColor' },
 
-                    '.house__phrase': {
-                        textAlign: 'right',
-                    },
+                    '.house__phrase': { textAlign: 'right' },
 
-                    '.house__about': {
-                        textAlignLast: 'right',
-                    },
+                    '.house__about': { textAlignLast: 'right' },
 
                     '.house__title, figcaption': {
                         color: '$house__slythColor',
@@ -143,9 +115,7 @@ export const HouseContainer = styled('section', {
 
             ravenclaw: {
                 '.house__content': {
-                    '&::before': {
-                        backgroundColor: '$house__ravenColor',
-                    },
+                    '&::before': { backgroundColor: '$house__ravenColor' },
 
                     '& ::selection:not(img)': {
                         backgroundColor: '$house__ravenColor',
@@ -155,9 +125,7 @@ export const HouseContainer = styled('section', {
                     },
 
                     '@bp3': {
-                        figcaption: {
-                            fontSize: '2rem !important',
-                        },
+                        figcaption: { fontSize: '2rem !important' },
                     },
                 },
             },
@@ -174,13 +142,9 @@ export const HouseContainer = styled('section', {
                         backgroundColor: '$house__huffleColor',
                     },
 
-                    '.house__phrase': {
-                        textAlign: 'right',
-                    },
+                    '.house__phrase': { textAlign: 'right' },
 
-                    '.house__about': {
-                        textAlignLast: 'right',
-                    },
+                    '.house__about': { textAlignLast: 'right' },
 
                     '.house__title, figcaption': {
                         color: '$house__huffleColor',

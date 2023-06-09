@@ -19,8 +19,8 @@ export const CTA = styled('section', {
         '.cta__title': {
             color: '$bgColor',
             fontFamily: '$title',
-            fontWeight: 400,
             fontSize: '$title',
+            fontWeight: 400,
         },
 
         '.cta__icon': {
@@ -28,8 +28,6 @@ export const CTA = styled('section', {
             transition: '500ms',
         },
 
-        '&:hover .cta__icon': {
-            transform: 'translateX(20px)',
-        },
+        '&:hover .cta__icon': { transform: 'translateX(20px)' },
     },
 });

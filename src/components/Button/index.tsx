@@ -7,16 +7,16 @@ export const Button = styled('button', {
     borderRadius: '1rem',
     borderStyle: 'solid',
     borderWidth: 1,
-    fontFamily: '$text',
-    fontSize: '1.5rem',
     color: 'inherit',
     cursor: 'pointer',
+    fontFamily: '$text',
+    fontSize: '1.5rem',
+    minWidth: 170,
     overflow: 'hidden',
     padding: '0.5rem 1.5rem',
     position: 'relative',
     transition: '2.5s',
     width: '50%',
-    minWidth: 170,
 
     '&:hover::before': {
         width: '100%',
@@ -39,8 +39,8 @@ export const Button = styled('button', {
                 borderColor: '$house__gryffColor',
 
                 '&:hover': {
-                    boxShadow: '0 0 10px 5px #ff004c',
                     borderColor: '$house__gryffHighlightColor',
+                    boxShadow: '0 0 10px 5px #ff004c',
                     '&::before': {
                         backgroundColor: '$house__gryffHighlightColor',
                     },
@@ -51,8 +51,8 @@ export const Button = styled('button', {
                 borderColor: '$house__slythColor',
 
                 '&:hover': {
-                    boxShadow: '0 0 10px 5px #00ffae',
                     borderColor: '$house__slythHighlightColor',
+                    boxShadow: '0 0 10px 5px #00ffae',
 
                     '&::before': {
                         backgroundColor: '$house__slythHighlightColor',
@@ -76,8 +76,8 @@ export const Button = styled('button', {
                 borderColor: '$house__huffleColor',
 
                 '&:hover': {
-                    boxShadow: '0 0 10px 5px #ffbb00',
                     borderColor: '$house__huffleHighlightColor',
+                    boxShadow: '0 0 10px 5px #ffbb00',
 
                     '&::before': {
                         backgroundColor: '$house__huffleHighlightColor',
@@ -92,15 +92,11 @@ export const Button = styled('button', {
 
                     boxShadow: '0 0 10px 5px #fff',
 
-                    '&::before': {
-                        backgroundColor: '#fff',
-                    },
+                    '&::before': { backgroundColor: '#fff' },
                 },
             },
         },
     },
 
-    defaultVariants: {
-        house: 'default',
-    },
+    defaultVariants: { house: 'default' },
 });

@@ -17,15 +17,11 @@ export const History = styled('section', {
     '.history__about': {
         width: '43%',
 
-        '.history__description': {
-            marginBottom: 20,
-        },
+        '.history__description': { marginBottom: 20 },
     },
 
     '@bp1': {
-        '&': {
-            justifyContent: 'space-around',
-        },
+        '&': { justifyContent: 'space-around' },
     },
 
     '& > div': {
@@ -42,13 +38,9 @@ export const History = styled('section', {
             '.history__about': {
                 width: '70%',
 
-                '.history__description': {
-                    marginBottom: 30,
-                },
+                '.history__description': { marginBottom: 30 },
 
-                button: {
-                    width: '100%',
-                },
+                button: { width: '100%' },
             },
         },
     },

@@ -6,16 +6,12 @@ export const MainHall = styled('section', {
     '& > div': {
         margin: '0 5rem',
 
-        '.mainhall__img': {
-            width: '100%',
-        },
+        '.mainhall__img': { width: '100%' },
 
         '.mainhall__content': {
             justifyContent: 'space-between',
 
-            '.mainhall__title': {
-                fontSize: '7rem',
-            },
+            '.mainhall__title': { fontSize: '7rem' },
 
             '.mainhall__description': {
                 marginLeft: '5%',
@@ -23,9 +19,7 @@ export const MainHall = styled('section', {
             },
 
             '@bp2': {
-                '.mainhall__title': {
-                    textAlign: 'center',
-                },
+                '.mainhall__title': { textAlign: 'center' },
             },
 
             '@bp3': {
@@ -41,9 +35,7 @@ export const MainHall = styled('section', {
             },
 
             '@bp6': {
-                '.mainhall__title': {
-                    fontSize: '5rem',
-                },
+                '.mainhall__title': { fontSize: '5rem' },
             },
         },
     },

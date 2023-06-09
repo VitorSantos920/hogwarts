@@ -11,9 +11,7 @@ export const Footer = styled('footer', {
         flexDirection: 'column',
         width: '100%',
 
-        '.footer__top, .footer__bottom': {
-            width: '80%',
-        },
+        '.footer__top, .footer__bottom': { width: '80%' },
 
         '.footer__top': {
             justifyContent: 'space-between',
@@ -23,60 +21,50 @@ export const Footer = styled('footer', {
                 marginTop: 14,
             },
 
-            '.footer__title': {
-                fontSize: '3rem',
-            },
+            '.footer__title': { fontSize: '3rem' },
         },
 
         '.footer__link, span, .footer__about': {
-            fontSize: '1.225rem',
             color: '$lightGray',
+            fontSize: '1.225rem',
         },
 
-        '.footer__link:hover': {
-            textDecoration: 'underline',
-        },
+        '.footer__link:hover': { textDecoration: 'underline' },
 
         '.footer__bottom': {
-            margin: '42px 0',
-            justifyContent: 'space-between',
             alignItems: 'center',
+            justifyContent: 'space-between',
+            margin: '42px 0',
 
             '.footer__logo': {
-                fontSize: '4rem',
                 color: 'inherit',
                 fontFamily: '$title',
+                fontSize: '4rem',
             },
 
             '.footer__author-credits': {
-                img: {
-                    height: 110,
-                },
-
                 alignItems: 'center',
+
+                img: { height: 110 },
             },
         },
 
         '@bp1': {
-            '.footer__top, .footer__bottom': {
-                width: '90%',
-            },
+            '.footer__top, .footer__bottom': { width: '90%' },
         },
 
         '@bp4': {
             '.footer__top, .footer__bottom': {
-                textAlign: 'center',
+                flexDirection: 'column',
                 gap: '2rem',
                 justifyContent: 'center',
-                flexDirection: 'column',
+                textAlign: 'center',
             },
 
             '.footer__author-credits': {
                 flexDirection: 'column',
 
-                p: {
-                    textAlign: 'center',
-                },
+                p: { textAlign: 'center' },
             },
         },
     },
