@@ -15,14 +15,13 @@ import { Protections } from './styles/Protections';
 import { CTA } from './styles/CTA';
 import { Footer } from './styles/Footer';
 
-// import MainHallImg from './img/mainHall.png';
-// import VSLogo from './img/VSLogo.png';
 function App() {
     const wikiBaseURL = 'https://harrypotter.fandom.com/pt-br/wiki';
 
     return (
         <div className="App">
             <Header />
+
             <main className="main">
                 <Home className="home flex" id="home">
                     <h1 className="home__title">Hogwarts</h1>
@@ -30,10 +29,15 @@ function App() {
                         “Draco Dormiens Nunquam Titillandus.”
                     </h2>
 
-                    <a href="#history">
+                    <a
+                        href="#history"
+                        aria-label="Arrow Down"
+                        className="home__link"
+                    >
                         <FiChevronsDown className="home__arrowDown" size={72} />
                     </a>
                 </Home>
+
                 <History className="history flex" id="history">
                     <Container className="flex">
                         <h3 className="history__title">
@@ -69,6 +73,7 @@ function App() {
                         </div>
                     </Container>
                 </History>
+
                 <Houses className="houses flex" id="houses">
                     <Container className="flex">
                         <h3 className="houses__title">Casas</h3>
@@ -180,12 +185,14 @@ function App() {
                         />
                     </Container>
                 </Houses>
+
                 <MainHall className="mainhall flex">
                     <Container>
                         <img
                             src="mainHall.png"
                             className="mainhall__img"
                             alt="Salão Principal de Hogwarts."
+                            loading="lazy"
                         />
                         <div className="mainhall__content flex">
                             <h3 className="mainhall__title">Salão Principal</h3>
@@ -208,6 +215,7 @@ function App() {
                         </div>
                     </Container>
                 </MainHall>
+
                 <Dumbledore className="dumbledore flex" id="dumbledore">
                     <Container>
                         <InitialContent>
@@ -248,6 +256,7 @@ function App() {
                         </div>
                     </Container>
                 </Dumbledore>
+
                 <Protections className="protections flex" id="protections">
                     <Container>
                         <h3 className="protections__title">Suas proteções!</h3>
@@ -274,6 +283,7 @@ function App() {
                         </p>
                     </Container>
                 </Protections>
+
                 <CTA className="cta flex">
                     <Container>
                         <h4 className="cta__subtitle">Se interessou?</h4>
@@ -354,7 +364,7 @@ function App() {
 
                     <section className="footer__bottom flex">
                         <div className="footer__hogwarts">
-                            <a href="" className="footer__logo">
+                            <a href="#home" className="footer__logo">
                                 HW
                             </a>
                             <p className="footer__about">
@@ -366,6 +376,7 @@ function App() {
                                 src="VSLogo.png"
                                 draggable="false"
                                 alt="Logo de Vitor Santos."
+                                loading="lazy"
                             />
                             <div>
                                 <p>&copy; 2023 - Vitor Santos.</p>

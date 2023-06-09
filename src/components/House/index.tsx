@@ -36,6 +36,7 @@ export function House({
                         <img
                             src={`${imgCharacteristics[0].name}.svg`}
                             alt={imgCharacteristics[0].alt}
+                            loading="lazy"
                         />
                         <figcaption>
                             {imgCharacteristics[0].figcaption}
@@ -46,6 +47,7 @@ export function House({
                         <img
                             src={`${imgCharacteristics[1].name}.svg`}
                             alt={imgCharacteristics[1].alt}
+                            loading="lazy"
                         />
                         <figcaption>
                             {imgCharacteristics[1].figcaption}
@@ -60,7 +62,11 @@ export function House({
                 </a>
             </div>
             <figure className="house__img">
-                <img src={`${imgHouse.name}.png`} alt={imgHouse.alt} />
+                <img
+                    src={`${imgHouse.name}.png`}
+                    loading="lazy"
+                    alt={imgHouse.alt}
+                />
             </figure>
         </HouseContainer>
     );
