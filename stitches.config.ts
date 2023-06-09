@@ -17,7 +17,7 @@ export const stitches = createStitches({
 
             bgColor: '#1f1d1d',
             lightGray: '#808080',
-            bgFooter: '#302e2e',
+            bgFooter: '#131212',
         },
         fonts: {
             title: 'Almendra SC, serif',
